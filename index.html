@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Meier-Vieracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+</head>
+
+<body>
+
+<div w3-include-html="header.html"></div>
+
+<main class="container">
+  <h1>Willkommen</h1>
+  <p>
+    Ich bin Professor für Angewandte Linguistik an der <a href="https://tu-dresden.de/gsw/slk/germanistik/al", target="_blank">TU Dresden</a> mit Interessen in
+    Diskursanalyse, Korpuslinguistik und digitaler Kommunikation.
+  </p>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Simon Meier-Vieracker
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script>
+  w3IncludeHTML();
+</script>
+</body>
+</html>
+

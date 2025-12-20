@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Meier-Vieracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+</head>
+
+<body>
+
+<div w3-include-html="header.html"></div>
+
+<main class="container">
+    <h1>Publikationen</h2>
+    <p><i>Stand <span id='date-time'></span></i></p>
+    <script>
+        var time = new Date();
+        var dt = time.getDate()+'.'+(time.getMonth()+1)+'.'+time.getFullYear();
+        document.getElementById('date-time').innerHTML=dt;
+    </script>
+    <nav>
+        <ol>
+        <li><a href="#Monographien">Monographien</a></li>
+        <li><a href="#Herausgaben">Herausgaben</a></li>
+        <li><a href="#Zeitschriftenartikel">Zeitschriftenartikel</a></li>
+        <li><a href="#Buchbeiträge">Buchbeiträge</a></li>
+        <li><a href="#Rezensionen">Rezensionen</a></li>
+        <!-- Add more items as needed -->
+        </ol>
+    </nav>
+    <div class="pub-container">
+    <h2 id="Monographien">Monographien</h2>
+    <div w3-include-html="https://api.zotero.org/groups/5716298/collections/WZ8W5N76/items/top?format=bib&style=https://raw.githubusercontent.com/fussballlinguist/csl_styles/main/unified-style-sheet-for-linguistics-cv.csl&linkwrap=1"></div> 
+    <script>
+    w3IncludeHTML('');
+    </script>
+    <h2 id="Herausgaben">Herausgaben</h2>
+    <div w3-include-html="https://api.zotero.org/groups/5716298/collections/EIU7ZVRX/items/top?format=bib&style=https://raw.githubusercontent.com/fussballlinguist/csl_styles/main/unified-style-sheet-for-linguistics-cv.csl&linkwrap=1"></div> 
+    <script>
+    w3IncludeHTML('');
+    </script>
+    <h2 id ="Zeitschriftenartikel">Zeitschriftenartikel</h2>
+    <div w3-include-html="https://api.zotero.org/groups/5716298/collections/ZZ7GREV4/items/top?format=bib&style=https://raw.githubusercontent.com/fussballlinguist/csl_styles/main/unified-style-sheet-for-linguistics-cv.csl&linkwrap=1"></div> 
+    <script>
+    w3IncludeHTML('');
+    </script>
+    <h2 id="Buchbeiträge">Buchbeiträge</h2>
+    <div w3-include-html="https://api.zotero.org/groups/5716298/collections/LTKVQGDW/items/top?format=bib&style=https://raw.githubusercontent.com/fussballlinguist/csl_styles/main/unified-style-sheet-for-linguistics-cv.csl&linkwrap=1"></div> 
+    <script>
+    w3IncludeHTML('');
+    </script>
+    <h2 id="Rezensionen">Rezensionen</h2>
+    <div w3-include-html="https://api.zotero.org/groups/5716298/collections/IB7TVT66/items/top?format=bib&style=https://raw.githubusercontent.com/fussballlinguist/csl_styles/main/unified-style-sheet-for-linguistics-cv.csl&linkwrap=1"></div> 
+    <script>
+    w3IncludeHTML('');
+    </script>
+    </div>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Simon Meier-Vieracker
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+

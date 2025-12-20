@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Meier-Vieracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+</head>
+
+<body>
+
+<div w3-include-html="header.html"></div>
+
+<main class="container">
+    <h1>Über mich</h1>
+    <img src="media/smv.png" alt="Simon Meier-Vieracker" class="cv-photo">
+  <p>
+    Ich bin Professor für Angewandte Linguistik an der <a href="https://tu-dresden.de/gsw/slk/germanistik/al", target="_blank">TU Dresden</a> mit Interessen in
+    Diskursanalyse, Korpuslinguistik und digitaler Kommunikation.
+  </p>
+  <p>Ich engagiere mich in der Wissenschaftskommunikation, betreibe reichweitenstarke Kanäle auf <a href="https://www.instagram.com/fussballinguist/" target="_blank">Instagram</a> und <a href="https://www.tiktok.com/@fussballinguist" target="_blank">TikTok</a> und bin sehr regelmäßig als Autor oder Interviewpartner in regionalen und überregionalen Medien vertreten.</p>
+  <p>Ich biete auch Workshops und Fortbildungen im Bereich Wissenschaftskommunikation an. Kontaktieren Sie mich gerne bei Interesse.</p>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Simon Meier-Vieracker
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  w3IncludeHTML();
+</script>
+
+</body>
+</html>
+

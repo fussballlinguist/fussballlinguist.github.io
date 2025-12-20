@@ -1,0 +1,219 @@
+/* ------------------------
+   Base
+------------------------- */
+
+:root {
+  --max-width: 800px;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-text: #111;
+  --color-muted: #666;
+  --color-accent: #e60073;
+  --color-bg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica";
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+
+a {
+  color: #e60073;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline; /* optional */
+}
+
+/* ------------------------
+   Layout
+------------------------- */
+
+header {
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  max-width: var(--max-width);
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+/* ------------------------
+   Navigation
+------------------------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .site-title {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+nav a:hover {
+  color: var(--color-accent);
+}
+
+/* ------------------------
+   Content
+------------------------- */
+
+h1, h2, h3 {
+  line-height: 1.3;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.pub-list li {
+  margin-bottom: 0.75rem;
+}
+
+/* ------------------------
+   Footer
+------------------------- */
+
+footer {
+  border-top: 1px solid #ddd;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+/* ------------------------
+   Responsive
+------------------------- */
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .cv-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-list dt {
+    margin-top: 1rem;
+  }  
+}
+
+/* ------------------------
+   Publications
+------------------------- */
+
+.pub-container {
+  max-width: 650px;      /* typographisch angenehm */
+}
+
+/* ------------------------
+   CV
+------------------------- */
+
+.cv-list {
+  max-width: 800px;
+}
+
+.cv-item {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cv-item dt {
+  font-weight: bold;
+  color: var(--color-muted);
+}
+
+.cv-item dd {
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  min-width: 12rem;
+}
+
+.submenu li {
+  padding: 0.25rem 1rem;
+}
+
+.submenu a {
+  white-space: nowrap;
+}
+
+.has-submenu:hover .submenu,
+.has-submenu:focus-within .submenu {
+  display: block;
+}
+
+.cv-photo {
+  float: right;            /* Bild nach rechts */
+  width: 500px;            /* gewünschte kleinere Größe */
+  max-width: 40%;          /* optional: responsive */
+  margin: 0 0 1rem 1rem;   /* Abstand: unten + links vom Text */
+  border-radius: 2px;      /* optional: leicht abgerundet */
+}

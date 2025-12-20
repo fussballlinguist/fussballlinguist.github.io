@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Meier-Vieracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+</head>
+
+<body>
+
+<div w3-include-html="header.html"></div>
+
+<main class="container">
+
+  <h1>Curriculum Vitae</h1>
+
+  <dl class="cv-list">
+
+    <div class="cv-item">
+        <dt>seit 2020</dt>
+        <dd>Professor für Angewandte Linguistik an der TU Dresden</dd>
+    </div>
+
+    <div class="cv-item">
+        <dt>2025</dt>
+        <dd>Auszeichnung mit dem <a href="https://tu-dresden.de/forschung-transfer/wissenschaftskommunikation/tag-fuer-wissenschaftskommunikation/tud-preis-fuer-exzellente-wissenschaftskommunikation" target="_blank">TUD-Preis für Exzellente Wissenschaftskommunikation 2025</a></dd>
+    </div>
+
+    <div class="cv-item">
+    <dt>2023</dt>
+    <dd>Auszeichnung zum <em>Goldenen Blogger 2023</em> in der Kategorie „TikTok“</dd>
+    </div>
+
+    <div class="cv-item">
+    <dt>2017 – 2020</dt>
+    <dd>Vertretung der Professur für Angewandte Linguistik an der TU Dresden</dd>
+    </div>
+
+    <div class="cv-item">
+    <dt>2013 – 2017</dt>
+    <dd>
+      Wissenschaftlicher Mitarbeiter am Fachgebiet Allgemeine Linguistik,<br>
+      TU Berlin
+    </dd>
+    </div>
+
+    <div class="cv-item">
+    <dt>2008 – 2013</dt>
+    <dd>
+      Wissenschaftlicher Assistent am Institut für Germanistik,<br>
+      Universität Bern
+    </dd>
+    </div>
+
+    <div class="cv-item">
+    <dt>2012</dt>
+    <dd>
+      Promotion in Deutscher Sprachwissenschaft (Dr. phil.),<br>
+      Universität Bern
+    </dd>
+    </div>
+
+    <div class="cv-item">
+    <dt>2010</dt>
+    <dd>
+      Sieg beim Tippspiel des Instituts für Germanistik<br>
+      zur Fußballweltmeisterschaft in Südafrika
+    </dd>
+    </div>
+
+    <div class="cv-item">
+    <dt>2000 – 2007</dt>
+    <dd>
+      Studium der Kommunikationswissenschaft und Philosophie (M.A.),<br>
+      Universitäten Duisburg-Essen und Florenz
+    </dd>
+    </div>
+
+  </dl></div>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Simon Meier-Vieracker
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  w3IncludeHTML();
+</script>
+
+</body>
+</html>
+
