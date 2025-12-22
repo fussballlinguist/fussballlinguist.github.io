@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <link rel="icon" type="image/x-icon" href="media/smv-favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Meier-Vieracker</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="site-title" href="/">
+        Simon Meier-Vieracker
+      </a>
+      <ul class="menu">
+        <li><a href="/about.html">About</a></li>
+        <li class="has-submenu">
+          <a href="/publications.html">Publikationen</a>
+          <ul class="submenu">
+            <li><a href="/publications.html#Monographien">Monographien</a></li>
+            <li><a href="/publications.html#Herausgaben">Herausgaben</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+            <a href="wisskomm.html">Wissenschaftskommunikation</a>
+            <ul class="submenu">
+                <li><a href="/wisskomm/workshops.html">Workshops</a></li>
+            </ul>
+        </li>
+        <li><a href="/cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Wissenschaftskommunikation</h1>
+  <p>
+    Als öffentlich finanzierter Wissenschaftler halte ich es für eine meiner Kernaufgaben, in und mit der Öffentlichkeit über Wissenschaft und Forschung zu kommunizieren. Ich tue das auf vielfältige Weise, mit reichweitenstarken Kanälen auf Instagram und TikTok, mit regelmäßigen Interviews in Presse, Radio und Fernsehen, mit Gastbeiträgen in der Presse, mit Gastauftritten in Podcasts und mit Auftritten und Vorträgen bei öffentlichen Veranstaltungen.
+  </p>
+  <p>
+    Für mein Engagement wurde ich 2025 mit dem ersten TUD-Preis für Exzellente Wissenschaftskommunikation ausgezeichnet.
+  </p>
+  <p>Meine langjährige Erfahrung in der Wissenschaftskommunikation gebe ich gerne in Form von <a href="/wisskomm/workshops.html">Workshops und Fortbildungen</a> an Interessierte weiter.</p>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Simon Meier-Vieracker
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  w3IncludeHTML();
+</script>
+
+</body>
+</html>
+

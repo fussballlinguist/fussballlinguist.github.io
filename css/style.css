@@ -196,6 +196,7 @@ footer {
   border: 1px solid #ddd;
   min-width: 12rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
 }
 
 .submenu li {
@@ -217,4 +218,22 @@ footer {
   max-width: 40%;          /* optional: responsive */
   margin: 0 0 1rem 1rem;   /* Abstand: unten + links vom Text */
   border-radius: 2px;      /* optional: leicht abgerundet */
+}
+
+.menu a {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .submenu {
+    position: static;
+  }
+
+  .menu a {
+    white-space: normal;
+  }
 }
