@@ -37,14 +37,14 @@ a:focus {
 /* Schriftgröße für Bildschirme bis 768px Breite (Tablet/Mobil) */
 @media (max-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
 /* Noch kleiner für sehr kleine Smartphones (bis 480px) */
 @media (max-width: 480px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
