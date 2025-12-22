@@ -18,6 +18,7 @@
 body {
   margin: 0;
   font-family: "Helvetica";
+  font-size: 16px;
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.6;
@@ -31,6 +32,20 @@ a {
 a:hover,
 a:focus {
   text-decoration: underline; /* optional */
+}
+
+/* Schriftgröße für Bildschirme bis 768px Breite (Tablet/Mobil) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Noch kleiner für sehr kleine Smartphones (bis 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
 }
 
 /* ------------------------
